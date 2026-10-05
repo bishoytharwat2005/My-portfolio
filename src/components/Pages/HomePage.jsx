@@ -823,11 +823,10 @@ function HomePage() {
                             </span>
 
                             <ChevronDown
-                                className={`ml-2 h-5 w-5 transition-transform duration-300 ${
-                                    showAllProjects
+                                className={`ml-2 h-5 w-5 transition-transform duration-300 ${showAllProjects
                                         ? "rotate-180"
                                         : "rotate-0"
-                                }`}
+                                    }`}
                             />
                         </Button>
                     </div>
@@ -1318,13 +1317,15 @@ function HomePage() {
                     </div>
 
                     <a
-                        href="mailto:byshwythrwt8@gmail.com"
+                        href="https://wa.me/201227877020"
+                        target="_blank"
+                        rel="noreferrer"
                         className="inline-flex h-12 items-center justify-center rounded-xl bg-white px-6 font-bold text-slate-950 transition-all duration-300 hover:-translate-y-1 hover:bg-slate-200"
                     >
                         <MessageCircle className="mr-2 h-5 w-5" />
                         Let's Talk
                     </a>
-                </div>
+                </div>  
             </section>
         </div>
     );
