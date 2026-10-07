@@ -19,8 +19,6 @@ import {
     User,
 } from "lucide-react";
 
-import { Link } from "react-router";
-
 import Image from "../../assets/Porfile.jpg";
 
 /* -------------------------------------------------------------------------- */
@@ -342,6 +340,12 @@ function HomePage() {
         });
     };
 
+    const handleScrollToSection = (id) => {
+        document.getElementById(id)?.scrollIntoView({
+            behavior: "smooth",
+        });
+    };
+
     return (
         <div className="overflow-hidden">
             {/* ------------------------------------------------------------------ */}
@@ -412,14 +416,15 @@ function HomePage() {
                                 <ArrowDown className="ml-2 h-5 w-5" />
                             </Button>
 
-                            <Link
-                                to="/contact"
+                            <button
+                                type="button"
+                                onClick={() => handleScrollToSection("contact")}
                                 className="inline-flex h-14 items-center justify-center rounded-xl border border-gray-300 bg-white px-8 text-base font-bold text-gray-800 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:hover:bg-slate-800"
                             >
                                 Get In Touch
 
                                 <ArrowRight className="ml-2 h-5 w-5" />
-                            </Link>
+                            </button>
                         </div>
 
                         <div className="mt-8 flex items-center gap-3">
@@ -526,21 +531,23 @@ function HomePage() {
                             </p>
 
                             <div className="mt-8 flex flex-wrap gap-3">
-                                <Link
-                                    to="/about"
+                                <button
+                                    type="button"
+                                    onClick={() => handleScrollToSection("experience")}
                                     className="inline-flex h-12 items-center justify-center rounded-xl bg-blue-600 px-7 font-semibold text-white transition-all hover:-translate-y-1 hover:bg-blue-700"
                                 >
                                     More About Me
 
                                     <ArrowRight className="ml-2 h-4 w-4" />
-                                </Link>
+                                </button>
 
-                                <a
-                                    href="mailto:byshwythrwt8@gmail.com"
+                                <button
+                                    type="button"
+                                    onClick={() => handleScrollToSection("contact")}
                                     className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-700 px-7 font-semibold text-slate-200 transition-all hover:-translate-y-1 hover:border-slate-500 hover:bg-slate-900"
                                 >
                                     Contact Me
-                                </a>
+                                </button>
                             </div>
                         </div>
 
@@ -603,7 +610,7 @@ function HomePage() {
             <section
                 id="experience"
                 data-home-section="experience"
-                className="border-t border-slate-800 bg-slate-950 py-24 text-white"
+                className="scroll-mt-24 border-t border-slate-800 bg-slate-950 py-24 text-white"
             >
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl text-center">
@@ -697,13 +704,13 @@ function HomePage() {
                                 </span>
                             </div>
 
-                            <p className="mt-2 text-sm text-slate-400 font-medium pl-16">El Sherouk, Cairo, Egypt</p>
+                            <p className="mt-2 text-sm text-slate-400 font-medium sm:pl-16">El Sherouk, Cairo, Egypt</p>
 
-                            <p className="mt-4 text-slate-300 leading-relaxed text-sm pl-16">
+                            <p className="mt-4 text-slate-300 leading-relaxed text-sm sm:pl-16">
                                 Academic study covering Object-Oriented Programming, Data Structures, Algorithms, Databases, and Web Development concepts.
                             </p>
 
-                            <div className="mt-5 flex flex-wrap gap-2 pl-16">
+                            <div className="mt-5 flex flex-wrap gap-2 sm:pl-16">
                                 {["Object-Oriented Programming", "HTML5", "Data Structures", "Algorithms", "Databases", "Software Engineering", "C#"].map((skill) => (
                                     <span key={skill} className="rounded-lg bg-slate-800 border border-slate-700 px-3 py-1 text-xs font-semibold text-slate-300">
                                         {skill}

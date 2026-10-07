@@ -24,14 +24,14 @@ function Navbar() {
             section: "about",
         },
         {
-            name: "Skills",
-            path: "/services",
-            section: "skills",
-        },
-        {
             name: "Experience",
             path: "/experience",
             section: "experience",
+        },
+        {
+            name: "Skills",
+            path: "/services",
+            section: "skills",
         },
         {
             name: "Projects",
