@@ -597,6 +597,125 @@ function HomePage() {
             </section>
 
             {/* ------------------------------------------------------------------ */}
+            {/* Experience */}
+            {/* ------------------------------------------------------------------ */}
+
+            <section
+                id="experience"
+                data-home-section="experience"
+                className="border-t border-slate-800 bg-slate-950 py-24 text-white"
+            >
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div className="mx-auto max-w-2xl text-center">
+                        <span className="text-sm font-bold uppercase tracking-[0.25em] text-blue-400">
+                            Experience
+                        </span>
+
+                        <h2 className="mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl">
+                            Work & Internship Experience
+                        </h2>
+
+                        <p className="mt-5 text-lg leading-8 text-slate-400">
+                            My professional background, practical training, and hands-on work experience.
+                        </p>
+                    </div>
+
+                    <div className="mx-auto mt-16 max-w-4xl space-y-8">
+                        {/* Instant Software Solutions Card */}
+                        <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8 transition-all duration-300 hover:border-blue-500/40 hover:bg-slate-900">
+                            <div className="flex items-center gap-4 border-b border-slate-800 pb-6">
+                                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-600 text-lg font-bold text-white shadow-md">
+                                    IS
+                                </div>
+                                <div>
+                                    <h3 className="text-2xl font-bold text-white">Instant Software Solutions</h3>
+                                    <p className="text-sm font-medium text-slate-400">Internship · 10 mos</p>
+                                </div>
+                            </div>
+
+                            <div className="mt-8 space-y-8 relative before:absolute before:left-3.5 before:top-2 before:h-[calc(100%-16px)] before:w-0.5 before:bg-slate-800">
+                                {/* Role 1 */}
+                                <div className="relative pl-9">
+                                    <span className="absolute left-2 top-2.5 h-3 w-3 -translate-x-1/2 rounded-full bg-blue-500 ring-4 ring-slate-900" />
+                                    <div className="flex flex-wrap items-baseline justify-between gap-2">
+                                        <h4 className="text-xl font-bold text-slate-100">Frontend Developer Intern</h4>
+                                        <span className="text-xs font-semibold text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700/50">
+                                            Sep 2026 - Present · 2 mos
+                                        </span>
+                                    </div>
+                                    <p className="mt-1 text-sm text-blue-400 font-medium">Cairo · Remote</p>
+                                    <p className="mt-3 text-slate-300 leading-relaxed text-sm">
+                                        Participating in a hands-on Frontend Development Internship focused on bridging the gap between technical learning and real-world software engineering. Throughout the internship, I gained practical experience in building dynamic and responsive web applications.
+                                    </p>
+                                    <div className="mt-4 flex flex-wrap gap-2">
+                                        {["React.js", "Agile"].map((skill) => (
+                                            <span key={skill} className="rounded-lg bg-blue-500/10 border border-blue-500/20 px-3 py-1 text-xs font-semibold text-blue-400">
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* Role 2 */}
+                                <div className="relative pl-9">
+                                    <span className="absolute left-2 top-2.5 h-3 w-3 -translate-x-1/2 rounded-full bg-slate-600 ring-4 ring-slate-900" />
+                                    <div className="flex flex-wrap items-baseline justify-between gap-2">
+                                        <h4 className="text-xl font-bold text-slate-100">Full Stack Web Development Trainee</h4>
+                                        <span className="text-xs font-semibold text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700/50">
+                                            Jan 2026 - Present · 10 mos
+                                        </span>
+                                    </div>
+                                    <p className="mt-1 text-sm text-slate-400 font-medium">Cairo, Egypt · On-site</p>
+                                    <p className="mt-3 text-slate-300 leading-relaxed text-sm">
+                                        Currently enrolled in the Instant Full Stack Web Development program, where I am developing strong skills in modern web technologies and software development fundamentals.
+                                    </p>
+                                    <div className="mt-4 flex flex-wrap gap-2">
+                                        {["CSS", "HTML5", "JavaScript", "React", "Tailwind CSS"].map((skill) => (
+                                            <span key={skill} className="rounded-lg bg-slate-800 border border-slate-700 px-3 py-1 text-xs font-semibold text-slate-300">
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Arab Open University Student Experience Card */}
+                        <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8 transition-all duration-300 hover:border-blue-500/40 hover:bg-slate-900">
+                            <div className="flex flex-wrap items-start justify-between gap-4">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-400">
+                                        <GraduationCap className="h-6 w-6" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-2xl font-bold text-white">Computer Science Student</h3>
+                                        <p className="text-base font-semibold text-blue-400">Arab Open University (AOU)</p>
+                                    </div>
+                                </div>
+                                <span className="text-xs font-semibold text-slate-400 bg-slate-800/80 px-3 py-1.5 rounded-full border border-slate-700/50">
+                                    Sep 2023 - Present · 3 yrs 2 mos
+                                </span>
+                            </div>
+
+                            <p className="mt-2 text-sm text-slate-400 font-medium pl-16">El Sherouk, Cairo, Egypt</p>
+
+                            <p className="mt-4 text-slate-300 leading-relaxed text-sm pl-16">
+                                Academic study covering Object-Oriented Programming, Data Structures, Algorithms, Databases, and Web Development concepts.
+                            </p>
+
+                            <div className="mt-5 flex flex-wrap gap-2 pl-16">
+                                {["Object-Oriented Programming", "HTML5", "Data Structures", "Algorithms", "Databases", "Software Engineering", "C#"].map((skill) => (
+                                    <span key={skill} className="rounded-lg bg-slate-800 border border-slate-700 px-3 py-1 text-xs font-semibold text-slate-300">
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ------------------------------------------------------------------ */}
             {/* Skills */}
             {/* ------------------------------------------------------------------ */}
 
